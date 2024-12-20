@@ -1,0 +1,67 @@
+
+.container {
+    width: 60%; /* Reducir el ancho del contenedor */
+    margin: 0 auto;
+    padding: 15px; /* Reducir el padding */
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5rem; /* Reducir el tamaño del título */
+    margin-bottom: 15px; /* Menor separación del título */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reducir la separación entre los elementos */
+}
+
+label {
+    font-size: 0.9rem; /* Reducir el tamaño de las etiquetas */
+    color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    padding: 8px; /* Reducir el padding */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reducir el tamaño de fuente */
+    width: 100%;
+    max-width: 300px; /* Reducir el ancho máximo */
+    margin: 0 auto;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 8px 16px; /* Reducir el padding del botón */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem; /* Reducir el tamaño de fuente del botón */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    text-align: center;
+    color: #007bff;
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
+}

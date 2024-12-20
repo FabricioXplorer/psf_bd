@@ -1,0 +1,115 @@
+/* Estilo Global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Elimina cualquier scroll */
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se distribuyan en columnas */
+    gap: 30px; /* Espacio entre las secciones */
+    text-align: center;
+}
+
+/* Título Principal */
+h1 {
+    font-size: 28px;
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+/* Párrafos de Descripción */
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Estilo para las Tarjetas (enlaces) */
+.card {
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px; /* Tamaño fijo para todas las tarjetas */
+    width: 180px;  /* Tamaño fijo para todas las tarjetas */
+    font-size: 16px; /* Tamaño de texto más pequeño */
+    margin: 0 auto;
+    margin-bottom: 10px; /* Espacio entre las tarjetas */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #ffe600; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Diseño para las Tarjetas en Fila */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Hace que las tarjetas se acomoden en varias líneas */
+    justify-content: center; /* Centra las tarjetas dentro del contenedor */
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Diseño Responsivo */
+@media (max-width: 1024px) {
+    .card-container {
+        flex-wrap: wrap; /* Las tarjetas se reacomodarán en pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column; /* Las tarjetas se apilan en una sola columna en pantallas pequeñas */
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+
+    p, .card a {
+        font-size: 14px;
+    }
+
+    .card {
+        height: 100px;
+        padding: 10px;
+        width: 150px; /* Ajuste de tamaño en pantallas más pequeñas */
+    }
+}
